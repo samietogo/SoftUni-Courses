@@ -1,3 +1,6 @@
-let a = 1;
-let b = 8;
-console.log(a + b);
+function printLenght(a) {
+    let result = a.length + "\n" + a;
+    return result;
+}
+
+console.log(printLenght('Hello, JavaScript!'));
