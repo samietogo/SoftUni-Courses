@@ -5,7 +5,7 @@ function cityRecord(name, population, treasury) {
         treasury
     }
 
-    return result
+    return result;
 }
 
 console.log(cityRecord('Tortuga', 7000, 15000));
