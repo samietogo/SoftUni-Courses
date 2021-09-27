@@ -1,8 +1,9 @@
 function magicMatrices(matrix) {
-    let arr = [];
-    for (let i = 0; i < matrix.length; i++) {
-        
-    }
+    let sumRow = matrix.map((col => col.reduce((a,b) => a + b)));
+    let sumCol = matrix.reduce((z, a) => z.map((b, y) => a[y] + b));
+    let equal = array => array.every( x => x === array[0]);
+
+    return equal(sumRow) && equal(sumRow) && sumRow.toString() === sumCol.toString();
 }
 
 console.log(magicMatrices(
